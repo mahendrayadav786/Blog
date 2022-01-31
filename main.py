@@ -18,7 +18,7 @@ Bootstrap(app)
 gravatar = Gravatar(app, size=100, rating='g', default='retro', force_default=False, force_lower=False, use_ssl=False, base_url=None)
 
 ##CONNECT TO DB
-app.config['SQLALCHEMY_DATABASE_URI'] = "postgres://fgiktppnwbmrma:88b2c4c0043555fdd367ad2659af63a880e93553ab416da7475ecf9bacd5d77e@ec2-3-224-157-224.compute-1.amazonaws.com:5432/dd56n7akrsnuf6"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///blog.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 login_manager = LoginManager()
